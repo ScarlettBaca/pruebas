@@ -1,0 +1,1202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.foto{
+    grid-area: foto;
+}
+
+.descripcion{
+    grid-area: descripcion;
+}
+
+
+.grilla {
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "foto foto foto"
+      "descripcion descripcion descripcion"
+      "footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 23px 3fr 3fr 23px;
+    gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+    
+ }
+
+ @media(min-width:500px){
+    .grilla {
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "foto foto foto"
+          "descripcion descripcion descripcion"
+          "footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 23px 3fr 3fr 23px;
+        gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/  
+     }
+     .giovana{
+        width: 60%;
+        height: 90%;
+     }
+ }
+
+ @media(min-width: 768px){
+    .grilla {
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "foto foto foto"
+          "descripcion descripcion descripcion"
+          "footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 23px 3fr 3fr 23px;
+        gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+        
+     }
+     .giovana{
+        width: 60%;
+        height: 90%;
+     }
+ }
+
+ .foto{
+    background-color:rgb(201, 143, 143);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    width: 60%;
+    height: auto;
+    /*background-color: red;*/
+}
+
+.texto h1{
+    text-align: center;
+}
+.texto h2{
+    
+    text-align: center;
+}
+
+
+@media(min-width: 1024px){
+    .grilla {
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header   header"
+      "foto   descripcion"
+      "foto descripcion"
+      "footer footer ";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 23px 3fr 3fr 23px;
+    gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+ }
+ .giovana{
+    width: 75%;
+    height: 80%;
+ }
+}
+
+/* HASTA ACA ESTA TRABAJADO EL LAYOUT DE INDEX */
+
+
+/*DESDE ACA LAYOUT BIOGRAFIA*/
+
+.border{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.segunda{
+    grid-area: segunda;
+}
+
+.logros{
+    grid-area: logros;
+}
+
+nav{
+    grid-area: nav ;
+}
+
+
+.grillabiografia{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "segunda segunda segunda"
+      "logros logros logros"
+      "footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 23px 3fr 3fr 23px;
+    gap: 10px;
+}
+.giovanita{
+    width: 60%;
+    height: 93%;
+ }
+
+@media(min-width:500px){
+    .grillabiografia{
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "segunda segunda segunda"
+          "logros logros logros"
+          "footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 23px 3fr 3fr 23px;
+        gap: 10px;
+    }
+    .giovanita{
+        width: 80%;
+        height: 90%;
+     }
+}
+
+
+@media(min-width: 768px){
+.grillabiografia {
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header  header"
+      "segunda logros"
+      "segunda logros"
+      "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 23px 3fr 3fr 23px;;
+    gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/ 
+ }
+ .giovanita{
+    width: 80%;
+    height: 70%;
+ }
+}
+
+@media(min-width:1024px){
+    .grillabiografia {
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header  header"
+          "segunda logros"
+          "segunda logros"
+          "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 23px 3fr 3fr 23px;;
+        gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/ 
+     }
+     .giovanita{
+        width: 80%;
+        height: 80%;
+     }
+}
+ 
+ .segunda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(201, 143, 143);
+ }
+
+ .logros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(201, 143, 143);
+ }
+
+ .orden{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /*border: 1px solid black;*/
+    height: 50%;
+    width: 90%;
+ }
+
+ .arriba{
+    text-align: center;
+ }
+
+ .arriba p i{
+    font-size: 1.3em;
+ }
+
+ /*HASTA ACA LAYOUT SERVICIOS*/
+
+
+
+
+ /*DESDE ACA LAYOUT SERVICIOS*/
+
+ .border{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.asesorias{
+    grid-area: asesorias;
+}
+
+.consultorias{
+    grid-area: consultorias;
+}
+
+.contratos{
+    grid-area: contratos ;
+}
+
+.documentos{
+    grid-area: documentos;
+    /*grid-area es para asignar a una referencia que es el elemento y grid-temprlato-area es para despues acomodar ese elemento*/
+}
+
+.grillaservicios{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "asesorias asesorias asesorias asesorias"
+      "consultorias consultorias consultorias consultorias"
+      "contratos contratos contratos contratos"
+      "documentos documentos documentos documentos"
+      "footer footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 23px 2fr 2fr 2fr 2fr 23px;
+    gap: 10px;
+}
+
+.asesorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: rgb(201, 143, 143);
+    justify-content: space-around;
+}
+
+
+.asesoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.asesoria img{
+    width: 80%;
+    height: 100%;
+    margin-top: 20px;
+   
+}
+
+.asesoria p{
+    margin: 20px;
+    text-align: center;
+}
+
+.consultorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color:rgb(201, 143, 143);
+    justify-content: space-around;
+} 
+
+.consultoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+} 
+
+.consultoria img{
+    width: 90%;
+    height: 85%;
+}
+
+.consultoria p{
+    margin: 20px;
+    text-align: center;
+}
+
+.contratos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: rgb(201, 143, 143);
+    justify-content: space-around;
+} 
+
+.contrato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+} 
+
+.contratoimg{
+    width: 88%;
+    height: 85%;
+}
+
+.contrato p{
+    margin: 20px;
+    text-align: center;
+}
+
+.documentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: rgb(201, 143, 143);
+    justify-content: space-around;
+} 
+
+.legales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+} 
+
+.legalesimg{
+    width: 83%;
+    height: 88%;
+    margin-top: 20px;
+    
+ 
+}
+
+.legales p{
+    margin: 20px;
+    text-align: center;
+}
+
+@media(min-width:500px){
+    .grillaservicios{
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          "asesorias consultorias"
+          "contratos documentos"
+          "footer footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 23px 2fr 2fr 2fr 2fr 23px;
+        gap: 10px;
+    }
+}
+
+@media(min-width: 760px){
+
+     .grillaservicios {
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header  "
+          "asesorias consultorias"
+          "contratos documentos"
+          "footer footer";
+        grid-template-columns:50% 50%;
+        grid-template-rows: 23px 3fr 3fr 23px;
+        gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+        
+     }
+    
+     .asesoria img{
+        margin-top: -10px;
+        width: 82%;
+        height: 100%;
+    }
+
+    .consultoria h1{
+        margin-top: 15px;
+    }
+
+    .contratos h1{
+        margin-top: 15px;
+    }
+
+    .legales h1{
+        margin-top: 15px;
+    }
+
+    .legales img{
+        width: 90%;
+        height: 90%;
+        margin-top: -10px;
+    }
+    }
+
+@media(min-width:1024px){
+    .grillaservicios {
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          "asesorias consultorias contratos documentos"
+          "asesorias consultorias  contratos documentos"
+          "footer footer footer footer";
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 23px 3fr 3fr 23px;
+        gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+        
+     }
+     .asesorias h1{
+        font-size: 2.5em;
+     }
+
+     .consultorias h1{
+        font-size: 2.5em;
+     }
+
+     .contratos h1{
+        font-size: 2.5em;
+     }
+
+     .documentos h1{
+        font-size: 2.5em;
+     }
+
+     .asesorias p{
+        font-size: 1em;
+     }
+
+     .consultorias p{
+        font-size: 1em;
+     }
+
+     .contratos p{
+        font-size: 1em;
+     }
+
+     .documentos p{
+        font-size: 1em;
+     }
+}
+     
+/*HASTA ACA LAYOUT DE SERVICIOS*/
+
+
+/*DESDE ACA LAYOUT DE BLOG*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.imagen{
+    grid-area: imagen;
+}
+
+.primero{
+    grid-area: primero;
+}
+
+.segundo{
+    grid-area: segundo;
+}
+
+
+.grillablog{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "imagen imagen imagen"
+      "primero primero primero"
+      "segundo segundo segundo"
+      "footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 23px 4fr 2fr 2fr 23px;
+    gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+    
+ }
+
+.testigo{
+    width: 30%;
+    height: 100%;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primero{
+    background-color: rgb(201, 143, 143);
+}
+
+.primero p{
+    margin: 20px;
+}
+
+.segundo{
+    background-color: rgb(201, 143, 143);
+}
+.segundo p{
+    margin:20px
+}
+
+@media(min-width:500px){
+    .grillabio{
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "imagen imagen imagen"
+          "primero primero primero"
+          "segundo segundo segundo"
+          "footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 23px 4fr 2fr 2fr 23px;
+        gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+    }
+}
+
+@media(min-width:760px){
+    .grillabio{
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "imagen imagen imagen"
+          "primero primero primero"
+          "segundo segundo segundo"
+          "footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 23px 4fr 2fr 2fr 23px;
+        gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+    }
+}
+
+@media(min-width:1024px){
+    .grillabio{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "primero primero imagen imagen"
+        "segundo segundo segundo segundo"
+        "footer footer footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 23px 4fr 4fr 23px;
+    }
+
+}
+
+
+/*FIN LAYOUT BLOG*/
+
+
+
+
+/*INICIO LAYOUT CONTACTO*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.contacto{
+    grid-area: contacto;
+}
+
+.ubicanos{
+    grid-area: ubicanos;
+}
+
+.grillacontacto{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "contacto contacto contacto"
+    "ubicanos ubicanos ubicanos"
+    "footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 23px 3fr 3fr 23px;
+    gap: 10px;
+}
+
+.form{
+    width: 50%;
+    height: 50%;
+}
+.mapita{
+    width: 100%;
+    height: 100%;
+    margin: 40px;
+}
+
+.contacto{
+    background-color: rgb(201, 143, 143);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicanos{
+    background-color: rgb(201, 143, 143);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa{
+    background-color: rgb(201, 143, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    color: rgb(201, 143, 143);
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+}
+
+h1{
+    text-align: center;
+}
+table,th,td{
+    border: 1px solid black
+}
+
+.presentacion{
+ 
+    background-color:rgb(201, 143, 143);
+}
+
+@media(min-width:1024px){
+    .grillacontacto{
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header "
+          "contacto ubicanos"
+          "contacto ubicanos"
+          "footer  footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 23px 3fr 3fr 23px;
+        gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+        }
+ 
+    
+    .contacto{
+        display: flex;
+        flex-direction: column;
+       
+     }
+    
+    .ubicanos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;   
+    }
+    
+    .mapa{
+       width: 80% ;
+       height: 80%;
+    }
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;   
+}
+
+/*header{
+    background-color:white;
+    padding: 40px;
+    margin-top: 0%;
+}*/
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    color: rgb(201, 143, 143);
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+}
+
+h1{
+    text-align: center;
+}
+table,th,td{
+    border: 1px solid black
+}
+
+.presentacion{
+ 
+    background-color:rgb(201, 143, 143);
+}
+
+
+
+
+
+
+
+
+
+
+s
+
+
+
+
+
+.arriba{
+    display: flex;
+    flex-direction: row;
+}
+
+.cuadradito{
+    width: 50%;
+    height: auto;
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(201, 143, 143);
+
+}
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.foto{
+    grid-area: foto;
+}
+
+.descripcion{
+    grid-area: descripcion;
+}
+
+nav{
+    grid-area: nav ;
+}
+
+aside{
+    grid-area: publicidad;
+    /*grid-area es para asignar a una referencia que es el elemento y grid-temprlato-area es para despues acomodar ese elemento*/
+}
+
+.grilla {
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "foto foto foto"
+      "descripcion descripcion descripcion"
+      "footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 23px 3fr 3fr 23px;
+    gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+    
+ }
+
+ @media(min-width: 768px){
+    .grilla {
+        width:100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "foto foto foto"
+          "descripcion descripcion descripcion"
+          "footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 23px 3fr 3fr 23px;
+        gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+        
+     }
+ }
+
+
+
+
+@media(min-width: 1024px){
+.grilla {
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header   header"
+      "foto   descripcion"
+      "foto descripcion"
+      "footer footer ";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 23px 3fr 3fr 23px;;
+    gap: 10px; /*lo que separa a las secciones (header, nav, productos, serviios, aside...) espaciados entre las areas*/
+    
+ }
+
+
+
+/* HASTA ACA ESTA TRABAJADO EL LAYOUT DE INDEX */
+
+
+
+
+
+
+/*HASTA AQUI NUEVO AVANCE DE RESPONSIVE SERVICIOS*/
+
+
+
+
+/*header{
+    background-color:white;
+    padding: 40px;
+    margin-top: 0%;
+}*/
+/*ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+a{
+    color: rgb(201, 143, 143);
+    text-decoration: none;
+    font-family: 'Chivo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+
+h1{
+    text-align: center;
+}*/
+/*table,th,td{
+    border: 1px solid black
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.inicio{
+    text-align: center;
+}
+
+.contactar{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.copy{
+    color: rgb(201, 143, 143);
+    text-decoration: none;
+    font-family: 'Chivo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.formato{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.segundoformato{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
